@@ -6,7 +6,7 @@ Anonymous, Fast, Secure, & Free File Sharing service.
 ## 📋 Prerequisites
 
 - GitHub account
-- Node.js 18+ installed locally
+- Node.js 18+
 - Git installed locally
 - A hosting platform account (Vercel, Railway, Render, etc.)
 
