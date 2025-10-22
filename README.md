@@ -1,4 +1,4 @@
-# FileBin - Deployment Guide
+# FileBin Deployment Guide
 
 This guide will help you deploy your FileBin anonymous file sharing service from GitHub to various hosting platforms.
 Anonymous, Fast, Secure, & Free File Sharing service.
