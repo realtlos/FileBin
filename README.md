@@ -3,14 +3,14 @@
 This guide will help you deploy your FileBin anonymous file sharing service from GitHub to various hosting platforms.
 Anonymous, Fast, Secure, & Free File Sharing service.
 
-## 📋 Prerequisites
+## Prerequisites
 
 - GitHub account
 - Node.js 18+
 - Git installed locally
 - A hosting platform account (Vercel, Railway, Render, etc.)
 
-## 🚀 Deployment Options
+## Deployment Options
 
 ### Option 1: Deploy to Vercel (Recommended)
 
@@ -98,7 +98,7 @@ Add these in Railway's Variables tab:
 1. Create a new PostgreSQL database in Render
 2. Copy the connection string to your environment variables
 
-## 🗄️ Database Setup
+## Database Setup
 
 ### PostgreSQL Database
 You'll need a PostgreSQL database. Options include:
@@ -132,7 +132,7 @@ CREATE TABLE files (
 );
 ```
 
-## ☁️ Google Cloud Storage Setup
+## Google Cloud Storage Setup
 
 ### Step 1: Create Google Cloud Project
 1. Go to [Google Cloud Console](https://console.cloud.google.com)
@@ -171,7 +171,7 @@ PRIVATE_OBJECT_DIR=/your-bucket-name/.private
 GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account",...} // Contents of JSON key
 ```
 
-## 🔧 Local Development from GitHub
+## Local Development from GitHub
 
 ### Step 1: Clone Repository
 ```bash
@@ -205,7 +205,7 @@ npx drizzle-kit push:pg
 npm run dev
 ```
 
-## 📦 Production Build
+## Production Build
 
 ### Build Assets
 ```bash
@@ -217,7 +217,7 @@ npm run build
 npm start
 ```
 
-## 🔒 Security Considerations
+## Security Considerations
 
 1. **Environment Variables**: Never commit `.env` files
 2. **CORS**: Configure CORS for your domain in production
@@ -225,7 +225,7 @@ npm start
 4. **File Size Limits**: Ensure proper file size validation
 5. **Storage Costs**: Monitor Google Cloud Storage usage
 
-## 📊 Monitoring & Logs
+## Monitoring & Logs
 
 ### Vercel
 - View logs in Vercel dashboard
@@ -239,7 +239,7 @@ npm start
 - Access logs via dashboard
 - Set up health checks
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -268,7 +268,7 @@ npm start
 - Review application logs
 - Test locally first to isolate issues
 
-## 📈 Scaling Considerations
+## Scaling Considerations
 
 - **CDN**: Use Cloudflare or similar for file delivery
 - **Database**: Consider connection pooling for high traffic
@@ -278,7 +278,7 @@ npm start
 
 ---
 
-## 🎉 Success!
+## Success!
 
 Once deployed, your FileBin service will be available at your hosting platform's provided URL. Users can upload files anonymously and share them instantly with automatic cleanup!
 
